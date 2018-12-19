@@ -1,4 +1,4 @@
-## Replication code for Chaudhuri et al., "Large-scale quantitative profiling of the Old English verse tradition," forthcoming in Nature Human Behaviour
+## Replication code for Neidorf et al., "Large-scale quantitative profiling of the Old English verse tradition," forthcoming in Nature Human Behaviour
 
 The code requires Python 3.6.0+. It is recommended that you create a virtual environment for this project before installing the required packages and running this code. If you have not done so previously, you will need to install virtualenv (e.g., by running `pip install virtualenv`). To create a virtual environment called 'venv_OE_stylometry', type `virtualenv venv_OE_stylometry`. To activate the virtual environment, type `source venv_OE_stylometry/bin/activate` when in the main directory. 
 
