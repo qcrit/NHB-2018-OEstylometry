@@ -2,7 +2,7 @@
 
 The code requires Python 3.6.0+. It is recommended that you create a virtual environment for this project before installing the required packages and running the code. If you have not done so previously, you will need to install virtualenv (e.g., by running `pip install virtualenv`). To create a virtual environment called 'venv_OE_stylometry', type `virtualenv venv_OE_stylometry`. To activate the virtual environment, type `source venv_OE_stylometry/bin/activate` when in the main directory. 
 
-Before running the replication experiments, install the required Python packages, including scipy, numpy, matplotlib, and nltk. 
+Before running the replication experiments, install the required Python packages, including scipy, numpy, pandas, matplotlib, and nltk. 
 
 ## Part 1: Corpus-wide functional ngram profiling (Fig. 1 and Supplemental Fig. S2)
 
@@ -17,8 +17,7 @@ To reproduce the ngram results in Fig. 1 and in Supplemental Fig. S2:
 To reproduce the sense-pause results in Fig. 2A:
 
 1) cd into the 'sense_pauses' directory. 
-2) Run 'python3 main.py arg1 arg2' in the terminal. 
-3) Here 'Arg1' should be the name of the directory that contains the texts to be analyzed, and 'Arg2' should be the name of the output file (e.g., to generate the selected data in Fig. 2A run `python3 main.py selected_texts_Fig2A SPresults`. To generate data for the whole (aggregated) corpus use 'Calgary_corpus' as the input folder - this is the raw data for the 'corpus mean' bar in Fig. 2A. 
+2) Run 'python3 main.py arg1 arg2' in the terminal. Here 'Arg1' should be the name of the directory that contains the texts to be analyzed, and 'Arg2' should be the name of the output file (e.g., to generate the selected data in Fig. 2A run `python3 main.py selected_texts_Fig2A SPresults`. To generate data for the whole (aggregated) corpus use 'Calgary_corpus' as the input folder - this is the raw data for the 'corpus mean' bar in Fig. 2A. 
 
 ## Part 3: Hierarchical agglomerative clustering using high-frequency ngrams (Fig. 4 and Supplemental Fig. S5)
 
