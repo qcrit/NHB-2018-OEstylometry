@@ -1,16 +1,16 @@
 ## Replication code for Neidorf et al., "Large-scale quantitative profiling of the Old English verse tradition," forthcoming in Nature Human Behaviour
 
-The code requires Python 3.6.0+. It is recommended that you create a virtual environment for this project before installing the required packages and running this code. If you have not done so previously, you will need to install virtualenv (e.g., by running `pip install virtualenv`). To create a virtual environment called 'venv_OE_stylometry', type `virtualenv venv_OE_stylometry`. To activate the virtual environment, type `source venv_OE_stylometry/bin/activate` when in the main directory. 
+The code requires Python 3.6.0+. It is recommended that you create a virtual environment for this project before installing the required packages and running the code. If you have not done so previously, you will need to install virtualenv (e.g., by running `pip install virtualenv`). To create a virtual environment called 'venv_OE_stylometry', type `virtualenv venv_OE_stylometry`. To activate the virtual environment, type `source venv_OE_stylometry/bin/activate` when in the main directory. 
 
-Before running the replication experiments, install the required Python packages. (N.B. I'll make a full list when all of the code is added to the repo - for now just install whatever you're prompted to.)
+Before running the replication experiments, install the required Python packages, including scipy, numpy, matplotlib, and nltk. 
 
 ## Part 1: Corpus-wide functional ngram profiling (Fig. 1 and Supplemental Fig. S2)
 
-To reproduce the ngram results in Fig. 1:
+To reproduce the ngram results in Fig. 1 in Supplementa Fig. S2:
 
 1) cd into the 'ngrams' directory. 
 2) Type `python3 main.py` in the terminal. 
-3) Running this code will generate three texts files listing the five most common functional bigrams, trigrams, or fourgrams in each text in the (nonaggregated) corpus, along with their frequencies and differences from the corpus mean. It will also produce a summary .csv file with key data. Fig. 1 is a plot of the sum of the trigram differences (i.e., the sum of columns Z, AD, AH, AL, and AP in 'results_NG.csv') against length (given in 'lengths.csv') for each text. 
+3) Running this code will generate a summary file ('results_NG.csv') with the key bigram, trigram and four-gram data, as well as three separate .txt with the full raw data for each. The summary file lists the top-five ngrams for each text in the nonaggregated corpus. For each ngram, the file lists the text frequency, corpus frequency, aboslute value of the difference between the text and corpus frequency, a running sum of the frequency differences, and the length of the text. Columns B-AE cover bigram,s columns AG-BJ trigrams, and BL-CO four-grams. As such, Fig. 1 is a plot of columns BI vs. BJ, Supplemental Fig. S2A is a plot of columns AD vs. AE, and Supplemental Fig. S2B is a plot of columns CN vs. CO. 
 
 ## Part 2: Sense-pause analysis (Fig. 2)
 
