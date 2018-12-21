@@ -9,7 +9,7 @@ Before running the replication experiments, install the required Python packages
 To reproduce the ngram results in Fig. 1 and in Supplemental Fig. S2:
 
 1) cd into the 'ngrams' directory. 
-2) Type `python3 main.py` in the terminal. 
+2) Run `python3 main.py` in the terminal. 
 3) Running this code will generate a summary file ('results_NG.csv') with the key bigram, trigram and four-gram data, as well as three separate .txt with the full raw data for each ngram analysis. The summary file lists the top-five ngrams for each text in the (nonaggregated) corpus. For each ngram, the file gives the text frequency, corpus frequency, aboslute value of the difference between the text and corpus frequency, the running sum of the frequency differences, and the length of the text. Columns B-AE cover bigrams, columns AG-BJ trigrams, and columns BL-CO four-grams. As such, Fig. 1 is a plot of BI vs. BJ, Supplemental Fig. S2A is a plot of AD vs. AE, and Supplemental Fig. S2B is a plot of CN vs. CO. 
 
 ## Part 2: Sense-pause analysis (Fig. 2)
@@ -32,7 +32,7 @@ N.B.: 'Results1.xlsx' contains all of the input data required for clustering - '
 To regenerate the raw trigram input data:
 
 1) cd into the 'hierarchical_clustering/trigram_clustering/trigram_calculation' directory. 
-2) Type `python3 character_ngrams.py` in the terminal. 
+2) Run `python3 character_ngrams.py` in the terminal. 
 3) This will calculate the frequencies of the 30 most common ngrams in each text in the (modified nonaggregated) corpus and print them to 'results.xlsx'.
 4) To prepare the data for clustering, the following preprocessing steps are required. i) Sort the texts by length (i.e., by column AE). ii) Delete everything below row 50 (i.e., retain only the five longest texts). iii) Rescale the frequencies to min -1 and max 1. These three steps will yield the final input data required (i.e., Sheet2 of 'results1.xlsx' in 'hierarchical_clustering/trigram_clustering/clustering'. 
 
