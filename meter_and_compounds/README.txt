@@ -1,4 +1,4 @@
-The fundamental data resides in the folder ‘Base data’, which contains four files:
+The fundamental data resides in the folder ‘Base data’ (and is duplicated in the folder 'Python_code' for convenience), which contains four files:
 
 A) calgary_proce_x.txt — the Old English verse corpus
 B) cynewulf.txt - the titles of Cynewulfian and attributed-Cynewulfian poems under examination
@@ -20,8 +20,7 @@ The associated Python code extracts this information, as described below. To rec
 Python codes
 —————
 ———————
-All Python codes are found in the folder ‘Python code’. However, in order for them to work properly, the codes and the files from ‘Base data’ discussed above must live in the same folder. 
-
+All Python codes are found in the folder ‘Python code’. 
 
 (PART 1)
 
@@ -131,7 +130,7 @@ The size of the circle in Figure 3 is given by dividing the number of shared com
 
 grep 'christii' cynewulfcomps_clean.txt | grep -c 'elene'
 
-divided by the first cell of 'Compound_Plotted.csv'. The number should be close to 9/9.4 (approximately 1), so the first colored circle in Fig. 3 should be very close to the size of the black dotted circle. 
+divided by the first cell of 'Compound_Plotted.csv'. The number should be quite close to 0.94, so the first colored circle in Fig. 3 should be very close to the size of the black dotted circle. 
 
 
 ###

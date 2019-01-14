@@ -14,6 +14,7 @@ load('OEdat_by_comp.mat','cf','cvec','cvecBEO');
 
 prior=zeros(243);
 for trial=1:10000
+    rng shuffle
 pair=zeros(243);
 pairbeo=zeros(242);
 matter=cvec./sum(cvec); %Probability distribution that a random iteration of a compound word ends up in a given poem
