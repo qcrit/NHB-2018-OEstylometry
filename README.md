@@ -37,6 +37,8 @@ To regenerate the raw trigram input data:
 
 The other analyses (i.e., using functional bigrams and fourgrams, as in Supplemental Fig. S5) can be run in exactly the same way. Just cd into the appropriate directory and run the Python code there. 
 
+## Part 3: Meter and nominal compounds 
 
+There is a separate readme in the appropriate sub-directory (meter_and_compounds) that describes how reproduce the analyses involving Old English meter and nominal compound frequencies. 
 
 
