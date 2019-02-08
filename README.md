@@ -39,6 +39,6 @@ The other analyses (i.e., using functional bigrams and fourgrams, as in Suppleme
 
 ## Part 4: Meter and nominal compounds 
 
-There is a separate readme in the appropriate sub-directory (meter_and_compounds) that describes how reproduce the analyses involving Old English meter and nominal compound frequencies. 
+There is a separate readme in the appropriate sub-directory (meter_and_compounds) that describes how to reproduce the analyses involving Old English meter and nominal compound frequencies. 
 
 
