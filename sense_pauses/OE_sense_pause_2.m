@@ -24,14 +24,7 @@ mean(group2);
 % t-test
 [h, p, ci, stats] = ttest2(group1, group2)
 
-m1 = mean(group1);
-m2 = mean(group2);
-s1 = std(group1);
-s2 = std(group2);
 
-sd_pooled = sqrt((s1^2 + s2^2)/2);
-
-cohen_d = (m1 - m2)/sd_pooled
 
 
 

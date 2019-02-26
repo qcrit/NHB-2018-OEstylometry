@@ -14,23 +14,6 @@ group = {'G1','G1','G1','G1','G1','G1','G2','G2','G2','G2','G3','G3','G3','G3','
 
 [p,tbl,stats] = anova1(data, group)
 
-m1 = mean(cynewulf_cynewulf);
-m2 = mean(cynewulf_andreas);
-m3 = mean(other);
-s1 = std(cynewulf_cynewulf);
-s2 = std(cynewulf_andreas);
-s3 = std(other);
-
-sd_pooled_12 = sqrt((s1^2 + s2^2)/2);
-cohen_d_12 = (m1 - m2)/sd_pooled_12
-
-sd_pooled_13 = sqrt((s1^2 + s3^2)/2);
-cohen_d_13 = (m1 - m3)/sd_pooled_13
-
-sd_pooled_23 = sqrt((s2^2 + s3^2)/2);
-cohen_d_23 = (m2 - m3)/sd_pooled_23
-
 c = multcompare(stats,'CType','tukey-kramer')
 
-% Tukey calculator 1: http://statpages.info/anova1sm.html
-% Tukey calculator 2: http://astatsa.com/OneWay_Anova_with_TukeyHSD/
+
